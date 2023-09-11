@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+/* universal style */
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* nav style */
+nav{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    padding: 50px 0px 20px 0px;
+}
+nav .nav_container{
+    width: 90%;
+    height: 60%;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    border-bottom: 1px solid rgba(23, 23, 23, 0.2);
+    padding-bottom: 30px;
+}
+nav .nav_container .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*------main style------*/
+.main{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+.main .main_container{
+    width: 90%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+/*---button START---*/
+.main .main_container .main_button_container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.main .main_container .main_button_container button.active{
+    background: #FF1F3D;
+    color: #fff;
+}
+/*---button END---*/
+/*---video START---*/
+.main .main_container .main_video_container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    place-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+/*---video END---*/
+/*---card START---*/
+.main .main_video_container .card{
+    width: 312px;
+    height: 22rem;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 4px;
+}
+.main .main_video_container .card .image{
+    width: 100%;
+    height: 210px;
+    position: relative;
+}
+.main .main_video_container .card .image img{
+    width: inherit;
+    height: inherit;
+}
+.main .main_video_container .card .image p{
+    width: fit-content;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    top: 85%;
+    font-size: 10px;
+}
+        /* information */
+.main .main_video_container .card .info{
+    display: grid;
+    place-items: flex-start;
+    grid-template-columns: 0.1fr 1fr;
+    gap: 15px;
+}
+.main .main_video_container .card .info .info_img{
+    width: 40px;
+}
+.main .main_video_container .card .info .info_img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.main .main_container .card .info .info_text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;   
+}
+.main .main_container .card .info .info_text .info_title{
+    font-size: 16px;
+    color: #171717;
+    font-weight: 700;
+    line-height: 26px;
+    padding-right: 20px;
+}
+.main .main_container .card .info .info_text .name,
+.main .main_container .card .info .info_text .view{
+    font-size: 14px;
+    color: rgba(23, 23, 23, 0.7);
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.main .main_container .card .info .info_text .name span{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/*---card END---*/
